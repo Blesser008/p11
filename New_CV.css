@@ -1,0 +1,69 @@
+p{
+    font-size: larger;
+    color:blue;
+    border:2px;
+    padding: 30px;
+    margin:10px;
+    text-align: center; 
+}
+
+body{
+    text-align: center; 
+    background-color: aqua ;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(10px); /* Blur effect */
+  padding: 20px;
+
+  }
+  
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+
+  }  
+  
+  
+  .navigation a {
+
+position:relative;
+font-size: 1.1em;
+color:#fff;
+text-decoration: none;
+font-weight:500;
+margin-left:40px;
+
+}
+  
+  .navigation a:hover {
+    color: #ccc;
+}
+  .navigation a::after{
+    content: '';
+    position:absolute;
+    left:0;
+    bottom:6px;
+    width:100%;
+    height:3px;
+    background:#fff;
+    border-radius:5px ;
+    transform-origin:right;
+    transform: scalex(0);
+    transition:transform .5s;
+}
+
+.navigation a:hover::after{
+    transform: left;
+    transform: scalex(1);
+}
